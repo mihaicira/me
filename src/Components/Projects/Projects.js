@@ -20,12 +20,12 @@ export default function Projects(){
 
             <div className="projects-list">
 
-                <button>  <img src={Choicezz}/> </button>
-                <button>  <img src={ClassroomLab}/> </button>
-                <button>  <img src={CSF}/> </button>
-                <button>  <img src={OfficeAssistant}/> </button>
-                <button>  <img src={Snake}/> </button>
-                <button>  <img src={DataWalk}/> </button>
+                <button>  <img src={Choicezz} alt="img"/> </button>
+                <button>  <img src={ClassroomLab} alt="img"/> </button>
+                <button>  <img src={CSF} alt="img"/> </button>
+                <button>  <img src={OfficeAssistant} alt="img"/> </button>
+                <button>  <img src={Snake} alt="img"/> </button>
+                <button>  <img src={DataWalk} alt="img"/> </button>
 
             </div>
 
@@ -33,7 +33,7 @@ export default function Projects(){
                 <img src={DataWalk}/>
                 <h2>Datawalk Landing Page</h2>
                 <h5>Website</h5>
-                <h5>Link: <a href="">Datawalk Landing Page</a></h5>
+                <h5>Link: <a href="wdarf">Datawalk Landing Page</a></h5>
                 <p>This project is a single-page website built with React. I was told what the page should contain and I had to put it all together using my own UI design idea.</p>
             </div>
         </div>
