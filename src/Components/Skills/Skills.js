@@ -19,7 +19,41 @@ export default function Skills(){
         <div id="skills-page" className="subpage" ref={element} style={{"opacity":`${pageOpacity}`}}>
             <HomeButton page="skills-page"/>
             <PageTitle text="Skills"/>
-            <p>heya</p>
+
+            <div className="skills-container">
+                <div>
+                    <h3>Web development</h3>
+                    <div>
+                       <h4> World Wide Web structuring: HTML</h4>
+                       <h4>HTML Format: CSS, SASS</h4>
+                       <h4>Programming language: JavaScript</h4>
+                       <h4> User Interface JS Library: React (State, Context, Redux, Hooks, Styled components, Class / Functional components, Router)</h4>
+                       <h4> Other JS libraries: JQuery</h4>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Web development</h3>
+                    <div>
+                        <h4> World Wide Web structuring: HTML</h4>
+                        <h4>HTML Format: CSS, SASS</h4>
+                        <h4>Programming language: JavaScript</h4>
+                        <h4> User Interface JS Library: React (State, Context, Redux, Hooks, Styled components, Class / Functional components, Router)</h4>
+                        <h4> Other JS libraries: JQuery</h4>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Web development</h3>
+                    <div>
+                        <h4> World Wide Web structuring: HTML</h4>
+                        <h4>HTML Format: CSS, SASS</h4>
+                        <h4>Programming language: JavaScript</h4>
+                        <h4> User Interface JS Library: React (State, Context, Redux, Hooks, Styled components, Class / Functional components, Router)</h4>
+                        <h4> Other JS libraries: JQuery</h4>
+                    </div>
+                </div>
+            </div>
         </div>
         </>)
 }

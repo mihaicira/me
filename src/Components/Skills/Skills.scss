@@ -1,0 +1,97 @@
+@import '../../variables';
+
+@mixin transition($ms){
+  transition: $ms;
+  -o-transition: $ms;
+  -webkit-transition: $ms;
+  -moz-transition: $ms;
+}
+
+@mixin flex-center($gap){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:$gap;
+}
+
+.skills-container{
+  @include flex-center(50px);
+  flex-direction: column;
+  padding: 0 50px 0 50px;
+
+  &>*{
+    max-width: 600px;
+  }
+
+  &>*:nth-child(1){
+    align-self: baseline;
+    @include flex-center(0);
+    flex-direction: column;
+    h3{
+      align-self: baseline;
+      background: $whiteish;
+      color: $green;
+      padding: 5px 15px 5px 15px;
+      border-radius: 5px;
+      width: max-content;
+    }
+
+    div{
+      background: $whiteish;
+      padding: 5px 15px 5px 15px;
+      border-radius: 5px;
+      h4{
+        color: $green;
+      }
+    }
+  }
+
+  &>*:nth-child(2){
+    align-self: center;
+    @include flex-center(0);
+    flex-direction: column;
+    h3{
+      background: $green;
+      color: $whiteish;
+      padding: 5px 15px 5px 15px;
+      border-radius: 5px;
+      width: max-content;
+    }
+
+    div{
+      background: $green;
+      padding: 5px 15px 5px 15px;
+      border-radius: 5px;
+      h4{
+        color: $whiteish;
+      }
+    }
+  }
+
+  &>*:nth-child(3){
+    align-self: end;
+    @include flex-center(0);
+    flex-direction: column;
+    h3{
+      align-self: end;
+      background: $whiteish;
+      color: $green;
+      padding: 5px 15px 5px 15px;
+      border-radius: 5px;
+      width: max-content;
+    }
+
+    div{
+      background: $whiteish;
+      padding: 5px 15px 5px 15px;
+      border-radius: 5px;
+      h4{
+        color: $green;
+      }
+    }
+  }
+
+  h3,h4{
+    font-family: $robotomono;
+  }
+}
