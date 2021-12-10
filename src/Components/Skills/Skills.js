@@ -1,6 +1,7 @@
 import "./Skills.scss"
 import HomeButton from "../HomeButton/HomeButton";
-import {Suspense, useEffect, useState,useRef} from 'react';
+import {useEffect, useState,useRef} from 'react';
+import PageTitle from "../PageTitle/PageTitle";
 
 export default function Skills(){
     const [pageOpacity,setPageOpacity] = useState(0)
@@ -17,6 +18,7 @@ export default function Skills(){
     return(<>
         <div id="skills-page" className="subpage" ref={element} style={{"opacity":`${pageOpacity}`}}>
             <HomeButton page="skills-page"/>
+            <PageTitle text="Skills"/>
             <p>heya</p>
         </div>
         </>)
