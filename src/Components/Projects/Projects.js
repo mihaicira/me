@@ -7,14 +7,7 @@ import ClassroomLab from '../../assets/clab.png'
 import CSF from '../../assets/csf.png'
 import OfficeAssistant from '../../assets/OfficeAssistant.png'
 import Snake from '../../assets/Snake.png'
-import dataWalk from '../../assets/dataWalk.png'
-
-// function Project({props}){
-//     return(<>
-//
-//         </>)
-// }
-
+import DataWalk from '../../assets/dataWalk.png'
 
 export default function Projects(){
     return(<>
@@ -32,12 +25,12 @@ export default function Projects(){
                 <button>  <img src={CSF}/> </button>
                 <button>  <img src={OfficeAssistant}/> </button>
                 <button>  <img src={Snake}/> </button>
-                <button>  <img src={dataWalk}/> </button>
+                <button>  <img src={DataWalk}/> </button>
 
             </div>
 
             <div className="selected-project">
-                <img src={dataWalk}/>
+                <img src={DataWalk}/>
                 <h2>Datawalk Landing Page</h2>
                 <h5>Website</h5>
                 <h5>Link: <a href="">Datawalk Landing Page</a></h5>
