@@ -19,7 +19,7 @@ export default function AboutMe(){
 
     return(
         <>
-            <div id="about-me-page" style={{"opacity":`${pageOpacity}`}} ref={element}>
+            <div id="about-me-page" style={{"opacity":`${pageOpacity}`}} ref={element} className="subpage">
                 <HomeButton page="about-me-page"/>
                 <PageTitle text="About me"/>
 

@@ -100,7 +100,7 @@ export default function Projects(){
     }
 
     return(<>
-        <div id="projects-page" ref={element} style={{"opacity":`${pageOpacity}`}}>
+        <div id="projects-page" ref={element} style={{"opacity":`${pageOpacity}`}} className="subpage">
             <HomeButton page="projects-page"/>
             <PageTitle text="Projects"/>
 

@@ -8,7 +8,7 @@ body,html,#root{
 }
 
 #root{
-    &>*{
+   .subpage{
         transition: 500ms;
         -o-transition: 500ms;
         -webkit-transition: 500ms;
