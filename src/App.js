@@ -8,7 +8,7 @@ import HomePage from "./Components/HomePage/HomePage";
 export default  function App() {
   return (
       <>
-          <HomePage
+          <HomePage/>
           <h2>hello</h2>
       </>
 
