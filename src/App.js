@@ -1,7 +1,7 @@
 import {Canvas} from "@react-three/fiber";
 import {Suspense} from 'react';
-import HomePage from "./Components/HomePage/HomePage";
-import DynamicContainer from "./Components/Dynamic/DynamicContainer";
+// import HomePage from "./Components/HomePage/HomePage";
+// import DynamicContainer from "./Components/Dynamic/DynamicContainer";
 import Dynamic from "./Dynamic";
 
 export default  function App() {
