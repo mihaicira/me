@@ -30,7 +30,7 @@ export default function Projects(){
             </div>
 
             <div className="selected-project">
-                <img src={DataWalk}/>
+                <img src={DataWalk} alt="img"/>
                 <h2>Datawalk Landing Page</h2>
                 <h5>Website</h5>
                 <h5>Link: <a href="wdarf">Datawalk Landing Page</a></h5>
