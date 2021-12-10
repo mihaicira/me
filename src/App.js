@@ -3,11 +3,12 @@
 // import HomePage from "./Components/HomePage/HomePage";
 // import DynamicContainer from "./Components/Dynamic/DynamicContainer";
 
-// import HomePage from "./Components/HomePage/HomePage";
+import HomePage from "./Components/HomePage/HomePage";
 
 export default  function App() {
   return (
       <>
+          <HomePage
           <h2>hello</h2>
       </>
 
