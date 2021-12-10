@@ -6,6 +6,16 @@ body,html,#root{
     padding: 0;
     margin: 0;
 }
+
+#root{
+    &>*{
+        transition: 500ms;
+        -o-transition: 500ms;
+        -webkit-transition: 500ms;
+        -moz-transition: 500ms;
+        opacity: 0;
+    }
+}
 body{
     background: $bgcolor;
 }

@@ -15,8 +15,6 @@
 }
 
 #about-me-page{
-  @include transition(500ms);
-  opacity: 0;
 
   @include flex-center(50px);
   flex-direction: column;

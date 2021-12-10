@@ -2,10 +2,19 @@ import "./HomeButton.scss"
 
 import {useNavigate} from "react-router-dom";
 
-export default function HomeButton(){
+export default function HomeButton(props){
     const navigate = useNavigate()
+
+    const clickHandler = (pageId)=>{
+        document.getElementById(pageId).style.opacity = '0'
+        setTimeout(()=>{
+            navigate('/')
+        },250)
+
+    }
+
     return(
-        <button className="home-btn" onClick={()=>{navigate('/')}}>
+        <button className="home-btn" onClick={()=>{clickHandler(props.page)}}>
             <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="home-btn">
                     <g id="home-btn-house">

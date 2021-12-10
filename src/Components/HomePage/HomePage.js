@@ -1,6 +1,6 @@
 import "./HomePage.scss"
 import Dynamic from "../../Dynamic";
-import {Suspense,useState} from 'react';
+import {Suspense, useEffect, useState,useRef} from 'react';
 import {Canvas} from "@react-three/fiber";
 import {useNavigate} from "react-router-dom";
 
@@ -10,6 +10,8 @@ function HomePage() {
     const [leftTranslate,setLeftTranslate] = useState(0)
     const [rightTranslate,setRightTranslate] = useState(0)
     const [modelTranslate,setModelTranslate] = useState(0)
+    const [pageOpacity,setPageOpacity] = useState(0)
+    const element = useRef()
 
     const changePageHandler = (newpage) =>{
         setLeftTranslate(-100)
@@ -20,9 +22,17 @@ function HomePage() {
         },1000)
     }
 
+    useEffect(()=>{
+        element.current.scrollIntoView()
+        setTimeout(()=>{
+            setPageOpacity(1)
+        },250)
+    },[])
+
     return (
         <>
-            <div className="dynamic-container" style={{"transform":`translateY(${modelTranslate}%)`}}>
+        <div ref={element} style={{"opacity":`${pageOpacity}`}}>
+            <div className="dynamic-container" style={{"transform":`translateY(${modelTranslate}%)`}} >
                 <Suspense fallback={<div style={{color:"red"}}>Loading... </div>}>
                     <Canvas>
                         {/*<OrbitControls />*/}
@@ -52,6 +62,8 @@ function HomePage() {
                     <button onClick={()=>{changePageHandler('/contact')}}>Contact</button>
                 </div>
             </div>
+        </div>
+
 
 
         </>

@@ -71,20 +71,23 @@ export default function Projects(){
             text1: "The Snake Game was my first interactive web application, which I've built from scratch using plain JavaScript. The reason I didn't use any other framework or SDK is not that it wouldn't have been a great ideea, because it would have certainly been - but I had no clue what JavaScript frameworks are and how they work.",
             text2: "Building up this little game I learnt what DOM is, what classes and IDs are and I even learnt some CSS when I needed to do some transitions."
         }
-
+        // name: "test",
+        // image: "test",
+        // type: "test",
+        // link: "test",
+        // text1: "test"
     ]
 
     const [chosenProject,chooseProject] = useState(null)
-    // name: "test",
-    // image: "test",
-    // type: "test",
-    // link: "test",
-    // text1: "test"
+    const [pageOpacity,setPageOpacity] = useState(0)
     const project = useRef(null)
     const element = useRef()
 
     useEffect(()=>{
         element.current.scrollIntoView()
+        setTimeout(()=>{
+            setPageOpacity(1)
+        },250)
     },[])
 
     const handleProjectClick = (idx) =>{
@@ -97,8 +100,8 @@ export default function Projects(){
     }
 
     return(<>
-        <div id="projects-page" ref={element}>
-            <HomeButton/>
+        <div id="projects-page" ref={element} style={{"opacity":`${pageOpacity}`}}>
+            <HomeButton page="projects-page"/>
             <PageTitle text="Projects"/>
 
             <ProjectsSVG/>

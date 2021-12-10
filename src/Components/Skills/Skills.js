@@ -4,7 +4,7 @@ import HomeButton from "../HomeButton/HomeButton";
 export default function Skills(){
     return(<>
         <div id="skills-page">
-            <HomeButton/>
+            <HomeButton page="skills-page"/>
             <p>heya</p>
         </div>
         </>)
