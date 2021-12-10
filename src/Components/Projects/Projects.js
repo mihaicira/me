@@ -9,11 +9,11 @@ import OfficeAssistant from '../../assets/OfficeAssistant.png'
 import Snake from '../../assets/Snake.png'
 import dataWalk from '../../assets/dataWalk.png'
 
-function Project({props}){
-    return(<>
-
-        </>)
-}
+// function Project({props}){
+//     return(<>
+//
+//         </>)
+// }
 
 
 export default function Projects(){
