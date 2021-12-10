@@ -1,7 +1,15 @@
+.svg-anim{
+  @media screen and (max-width:800px) {
 
+    height: 20vh;
+    transform: scale(1.6);
+    margin: 0;
+  }
+}
 
 
 #about-me-anim{
+
   #bg,#navbar{
     transform: translateX(-100%) scale(0) rotateX(90deg);
     transform-origin: center;
@@ -26,6 +34,7 @@
     transform-box: fill-box;
     transform-origin: center;
     animation: 1s about-me-me-anim ease-in-out 2s forwards, 1s move-to-center ease-in-out 3.6s forwards;
+
   }
 
   #about-me-leave-page{

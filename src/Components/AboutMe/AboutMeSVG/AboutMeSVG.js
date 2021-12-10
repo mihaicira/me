@@ -5,7 +5,7 @@ export default function AboutMeSVG(){
 
        <div className="svg-anim">
            <svg width="1261" height="316" viewBox="0 0 1261 316" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <g id="about-me-anim" clip-path="url(#clip0_20_67)">
+               <g id="about-me-anim" clipPath="url(#clip0_20_67)">
                    <g id="about-me-leave-page">
                        <path id="bg" d="M931.759 49.8156H297.523V316.143H931.759V49.8156Z" fill="#D8F0EE"/>
 
