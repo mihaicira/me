@@ -1,0 +1,112 @@
+@import '../../variables';
+
+@mixin flex-center($gap){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:$gap;
+}
+
+#about-me-page{
+
+  @include flex-center(50px);
+  flex-direction: column;
+  padding: 0 0 50px 0;
+
+  .white-section{
+    background: $whiteish;
+    width: 800px;
+    padding: 10px;
+    min-height: 200px;
+    border-radius: 5px;
+    @include flex-center(10px);
+    text-align: center;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 0px 8px 14px -1px rgba(0,0,0,0.52);
+    box-shadow: 0px 8px 14px -1px rgba(0,0,0,0.52);
+
+    div{
+      width: 500px;
+      order: 2;
+      p{
+        margin: 15px 0 0 0;
+      }
+      p:nth-child(2n+1){
+        font-size: .8rem;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    img{
+      order: 3;
+      width: 30%;
+      border-radius: 5px;
+    }
+
+
+    @media screen and (max-width:800px) {
+      width: 80%;
+      img{
+        order: 1;
+        width: 200px;
+      }
+    }
+
+    p,h5,h6{
+      color: $green;
+      font-family: $robotomono;
+    }
+  }
+
+  .green-section{
+    @include flex-center(50px);
+    text-align: center;
+    flex-wrap: wrap;
+
+    div{
+      border-radius: 5px;
+      min-height: 200px;
+      background: $green;
+      width: 375px;
+      padding: 10px;
+      -webkit-box-shadow: 0px 8px 14px -1px rgba(0,0,0,0.52);
+      box-shadow: 0px 8px 14px -1px rgba(0,0,0,0.52);
+
+
+      @media screen and (max-width:800px) {
+        width: 80%;
+      }
+
+
+      h5{
+        margin-bottom: 20px;
+      }
+
+      p{
+        margin: 0;
+      }
+      .smaller{
+        font-size: .7rem;
+      }
+
+      p:not(.smaller){
+
+        margin: 5px 0 0 0;
+      }
+
+    }
+
+    p,h5,h6{
+      color: $whiteish;
+      font-family: $robotomono;
+    }
+  }
+
+  h5{
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+  }
+  p{
+    font-size: .9rem;
+  }
+}

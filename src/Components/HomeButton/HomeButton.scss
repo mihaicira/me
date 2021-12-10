@@ -5,6 +5,12 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  position: absolute;
+  @media screen and (max-width:800px) {
+    position: relative;
+  }
+  left: 5px;
+  top: 5px;
 }
 
 #home-btn-house,

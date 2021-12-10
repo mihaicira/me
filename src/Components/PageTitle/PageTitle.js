@@ -1,8 +1,7 @@
-// import "./PageTitle.scss"
-// import FancyText from 'react-fancytext'
+import "./PageTitle.scss"
 
-export default function PageTitle(){
+export default function PageTitle(props){
     return(
-        <p>helos</p>
+        <h2 className="page-title">{props.text}</h2>
     )
 }

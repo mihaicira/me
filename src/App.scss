@@ -1,9 +1,10 @@
-
-@import './variables';
+@import "variables";
 
 body,html{
-    background: $bgcolor;
     overflow-x: hidden;
+}
+body{
+    background: $bgcolor;
 }
 *{
     box-sizing: border-box;
@@ -16,9 +17,13 @@ h1,h2,h3,h4,h5,h6,p,a,span{
 
 .dynamic-container{
     text-align: center;
-
-
     height: 40vh;
-
 }
 
+
+.svg-anim{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

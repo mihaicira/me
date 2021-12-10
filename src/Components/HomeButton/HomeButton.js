@@ -1,8 +1,11 @@
 import "./HomeButton.scss"
 
+import {useNavigate} from "react-router-dom";
+
 export default function HomeButton(){
+    const navigate = useNavigate()
     return(
-        <button className="home-btn">
+        <button className="home-btn" onClick={()=>{navigate('/')}}>
             <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="home-btn">
                     <g id="home-btn-house">

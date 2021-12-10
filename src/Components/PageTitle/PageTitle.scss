@@ -1,0 +1,16 @@
+@import '../../variables';
+
+
+.page-title{
+  text-align: center;
+  font-size: 4rem;
+  margin: 0 0 10px 0;
+
+  font-family: $robotoslab;
+
+  $big:6px;
+  $little: 4px;
+
+
+  text-shadow: $little $little $bgcolor,$big $big $green;
+}

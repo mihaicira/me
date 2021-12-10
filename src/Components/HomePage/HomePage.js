@@ -2,9 +2,12 @@ import "./HomePage.scss"
 import Dynamic from "../../Dynamic";
 import {Suspense} from 'react';
 import {Canvas} from "@react-three/fiber";
+import {useNavigate} from "react-router-dom";
 
 
 function HomePage() {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="dynamic-container">
@@ -31,7 +34,7 @@ function HomePage() {
                 </div>
 
                 <div className="main-navbar">
-                    <button>About me</button>
+                    <button onClick={()=>{navigate('/about')}}>About me</button>
                     <button>Projects</button>
                     <button>Skills</button>
                     <button>Contact</button>

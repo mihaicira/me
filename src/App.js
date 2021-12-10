@@ -15,7 +15,8 @@ export default  function App() {
               style={{
                   position: 'absolute',
                   width: '100%',
-                  height: '100%'
+                  height: '100%',
+                  zIndex:'-100'
               }}
               lineWidth={3}
               numParticles={500}
