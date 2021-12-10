@@ -4,7 +4,9 @@
 // import DynamicContainer from "./Components/Dynamic/DynamicContainer";
 import './App.scss'
 import HomePage from "./Components/HomePage/HomePage";
+import AboutMe from "./Components/AboutMe/AboutMe";
 import StarfieldAnimation from "react-starfield-animation";
+import {Routes, Route} from 'react-router-dom';
 
 export default  function App() {
   return (
@@ -18,7 +20,11 @@ export default  function App() {
               lineWidth={3}
               numParticles={500}
           />
-          <HomePage/>
+
+          <Routes>
+              <Route path="/" exact element={<HomePage/>}/>
+              <Route path="/about" exact element={<AboutMe/>}/>
+          </Routes>
       </>
 
   );

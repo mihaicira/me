@@ -6,6 +6,7 @@ export default function AboutMe(){
     return(
         <>
           <HomeButton/>
+          <h2>xd</h2>
           <PageTitle text="Hello"/>
 
             <h1> p1</h1>
