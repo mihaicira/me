@@ -1,7 +1,10 @@
 @import "variables";
 
-body,html{
+body,html,#root{
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 body{
     background: $bgcolor;

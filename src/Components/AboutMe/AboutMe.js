@@ -3,21 +3,23 @@ import HomeButton from "../HomeButton/HomeButton";
 import PageTitle from "../PageTitle/PageTitle";
 import AboutMeSVG from "./AboutMeSVG/AboutMeSVG";
 import Mihai from "../../assets/about-me-mihai.png"
-import {useEffect,useState} from 'react'
+import {useEffect,useState,useRef} from 'react'
 
 export default function AboutMe(){
 
     const [pageOpacity,setPageOpacity] = useState(0)
     useEffect(()=>{
+        element.current.scrollIntoView()
         setTimeout(()=>{
             setPageOpacity(1)
         },250)
-
     },[])
+
+    const element = useRef()
 
     return(
         <>
-            <div id="about-me-page" style={{"opacity":`${pageOpacity}`}}>
+            <div id="about-me-page" style={{"opacity":`${pageOpacity}`}} ref={element}>
                 <HomeButton/>
                 <PageTitle text="About me"/>
 

@@ -23,29 +23,34 @@ export default function Model({ ...props }) {
   const [xAxis,setXAxis] = useState(0)
   const [yAxis,setYAxis] = useState(2.22)
 
+  function checkAxis(e){
+    let x = ((e.clientX/window.innerWidth*3)-1.5)*-1
+    let y = (e.clientY/window.innerHeight/2)+2
+
+    const X_ERROR = .1
+    const Y_ERROR = .02
+
+    if(Math.abs(nonStateAxis[0] - x) > X_ERROR){
+      nonStateAxis[0] = x
+      setXAxis(nonStateAxis[0])
+    }
+
+    if(Math.abs(nonStateAxis[1] - y) > Y_ERROR){
+      nonStateAxis[1] = y
+      setYAxis(nonStateAxis[1])
+    }
+  }
+
   useEffect(()=>{
     let action_name = Object.keys(actions)[0]
     actions[action_name].play()
 
-    window.addEventListener("mousemove",(e)=>{
-      let x = ((e.clientX/window.innerWidth*3)-1.5)*-1
-      let y = (e.clientY/window.innerHeight/2)+2
+    document.getElementById("root").addEventListener("mousemove",checkAxis)
+  },[])
 
-
-      const X_ERROR = .1
-      const Y_ERROR = .02
-
-      if(Math.abs(nonStateAxis[0] - x) > X_ERROR){
-        nonStateAxis[0] = x
-        setXAxis(nonStateAxis[0])
-      }
-
-      if(Math.abs(nonStateAxis[1] - y) > Y_ERROR){
-        nonStateAxis[1] = y
-        setYAxis(nonStateAxis[1])
-      }
-    })
-  })
+  useEffect( () => () => {
+    document.getElementById("root").removeEventListener("mousemove",checkAxis)
+  }, [] );
 
   return (
     <group ref={group} {...props} dispose={null}>

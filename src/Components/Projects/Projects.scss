@@ -29,6 +29,7 @@
   button{
     background: transparent;
     height: 120px;
+    //max-width: 100%;
     outline: none;
     border: none;
     border-bottom: 3px solid transparent;
@@ -41,6 +42,7 @@
 
     img{
       height: 100%;
+      max-width: 100%;
       width: auto;
     }
   }
@@ -50,10 +52,13 @@
   @include flex-center(10px);
   flex-direction: column;
   border-radius: 5px;
-  width: 40%;
+  width: 35%;
   background: $green;
   padding: 20px;
   text-align: center;
+  @media screen and (max-width:800px) {
+    width: 90%;
+  }
 
   *{
     margin: 0;
@@ -70,6 +75,7 @@
   }
 
   img{
-    height: 120px;
+    max-height: 120px;
+    max-width: 100%;
   }
 }

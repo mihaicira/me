@@ -2,7 +2,7 @@ import "./ProjectsSVG.scss"
 
 export default function ProjectsSVG(){
     return(<>
-       <div className="svg-anim">
+       <div className="svg-anim" id="projects-svg">
            <svg width="1261" height="404" viewBox="0 0 1261 404" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g id="projects-anim" clipPath="url(#clip0_27_69)">
                    <path id="sun" d="M611.954 87.1058C625.176 87.1058 635.894 76.3877 635.894 63.1662C635.894 49.9447 625.176 39.2266 611.954 39.2266C598.733 39.2266 588.015 49.9447 588.015 63.1662C588.015 76.3877 598.733 87.1058 611.954 87.1058Z" fill="#FF6584"/>

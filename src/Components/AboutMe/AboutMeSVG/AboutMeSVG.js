@@ -3,7 +3,7 @@ import "./AboutMeSVG.scss"
 export default function AboutMeSVG(){
     return(<>
 
-       <div className="svg-anim">
+       <div className="svg-anim" id="anim-svg">
            <svg width="1261" height="316" viewBox="0 0 1261 316" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g id="about-me-anim" clipPath="url(#clip0_20_67)">
                    <g id="about-me-leave-page">

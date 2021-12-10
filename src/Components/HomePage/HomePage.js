@@ -17,7 +17,6 @@ function HomePage() {
         setModelTranslate(-100)
         setTimeout(()=>{
             navigate(newpage)
-
         },1000)
     }
 

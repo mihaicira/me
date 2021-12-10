@@ -15,19 +15,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-
-
     &>.main-left-container{
         text-align: center;
         min-width: 500px;
         max-width: 50%;
         flex-grow: 1;
 
+
         @include transition(500ms);
-
-        //margin-left: 50%;
-        //transform: translateX(-50%);
-
 
         &>h1{
             font-size: 5rem;
@@ -41,8 +36,18 @@
             font-family: $robotomono;
         }
 
-    }
 
+        @media screen and (max-width:800px) {
+            min-width: 0;
+            max-width: none;
+            width: 100vw;
+            margin-top: 300px;
+            &>h1 {
+                font-size: 4rem;
+            }
+        }
+
+    }
 
     &>.main-navbar{
         display: flex;
@@ -89,6 +94,16 @@
             background: $lightergreen;
             color: $bgcolor;
             //background: linear-gradient(113deg,$lightergreen 0% 80%,transparent 80%);
+        }
+
+        @media screen and (max-width:800px) {
+            //min-width: none;
+            max-width: none;
+            width: 100vw;
+            margin-top: 100px;
+            &>h1 {
+                font-size: 4rem;
+            }
         }
     }
 }
