@@ -1,4 +1,4 @@
-import "./AboutMe.scss"
+// import "./AboutMe.scss"
 import HomeButton from "../HomeButton/HomeButton";
 import PageTitle from "../PageTitle/PageTitle";
 

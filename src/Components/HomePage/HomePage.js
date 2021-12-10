@@ -1,4 +1,4 @@
-import "./HomePage.scss";
+// import "./HomePage.scss";
 import DynamicContainer from "../Dynamic/DynamicContainer";
 import React, {Suspense} from "react";
 
@@ -7,9 +7,7 @@ function HomePage() {
     return (
         <>
 
-            <Suspense fallback={<div style={{color:"red"}}>Loading... </div>}>
-                <DynamicContainer/>
-            </Suspense>
+            {/*<DynamicContainer/>*/}
 
             <div className="main-content-container">
 

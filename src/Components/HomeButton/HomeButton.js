@@ -1,4 +1,4 @@
-import "./HomeButton.scss"
+// import "./HomeButton.scss"
 import HomeButtonImg from '../../assets/home-btn.svg'
 
 export default function HomeButton(){
