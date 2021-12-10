@@ -18,6 +18,8 @@ export default  function App() {
                   <Dynamic/>
               </Canvas>
           </Suspense>
+
+          <p>hello</p>
       </>
 
   );
