@@ -3,7 +3,7 @@ import HomePage from "./Components/HomePage/HomePage";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import StarfieldAnimation from "react-starfield-animation";
 import {Routes, Route} from 'react-router-dom';
-// import Projects from "./Components/Projects/Projects";
+import Projects from "./Components/Projects/Projects";
 
 export default  function App() {
   return (
@@ -22,7 +22,7 @@ export default  function App() {
           <Routes>
               <Route path="/" exact element={<HomePage/>}/>
               <Route path="/about" exact element={<AboutMe/>}/>
-              {/*<Route path="/projects" exact element={<Projects/>}/>*/}
+              <Route path="/projects" exact element={<Projects/>}/>
           </Routes>
       </>
 
