@@ -1,5 +1,5 @@
 import {Canvas} from "@react-three/fiber";
-import Dynamic from "./Dynamic";
+import Dynamic from "../../Dynamic";
 import {Suspense} from "react";
 import {OrbitControls} from '@react-three/drei'
 
