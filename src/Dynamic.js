@@ -46,7 +46,7 @@ export default function Model({ ...props }) {
     actions[action_name].play()
 
     document.getElementById("root").addEventListener("mousemove",checkAxis)
-  },[])
+  },[actions])
 
   useEffect( () => () => {
     document.getElementById("root").removeEventListener("mousemove",checkAxis)
