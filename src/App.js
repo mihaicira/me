@@ -9,7 +9,6 @@ export default  function App() {
   return (
       <>
           <HomePage/>
-          <h2>hello</h2>
       </>
 
   );
