@@ -22,7 +22,7 @@ export default  function App() {
           <Routes>
               <Route path="/" exact element={<HomePage/>}/>
               <Route path="/about" exact element={<AboutMe/>}/>
-              <Route path="/projects" exact element={<Projects/>}/>
+              {/*<Route path="/projects" exact element={<Projects/>}/>*/}
           </Routes>
       </>
 
