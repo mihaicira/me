@@ -14,7 +14,7 @@
     transform: translateX(-100%) scale(0) rotateX(90deg);
     transform-origin: center;
     opacity: 0;
-    animation: 1.5s bg-anim ease-in-out forwards;
+    animation: 1.5s bg-anim ease-in-out 250ms forwards;
   }
 
   #paragraph01,
@@ -26,19 +26,19 @@
     transform: rotateY(90deg);
     transform-box: fill-box;
     opacity: 0;
-    animation: 1s paragraph ease-in-out 1.7s forwards;
+    animation: 1s paragraph ease-in-out 1.95s forwards;
   }
 
   #me{
     opacity: 0;
     transform-box: fill-box;
     transform-origin: center;
-    animation: 1s about-me-me-anim ease-in-out 2s forwards, 1s move-to-center ease-in-out 3.6s forwards;
+    animation: 1s about-me-me-anim ease-in-out 2.25s forwards, 1s move-to-center ease-in-out 3.85s forwards;
 
   }
 
   #about-me-leave-page{
-    animation: 1s leave-page ease-in-out 3.6s forwards;
+    animation: 1s leave-page ease-in-out 3.85s forwards;
   }
 }
 

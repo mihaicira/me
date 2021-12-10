@@ -3,11 +3,21 @@ import HomeButton from "../HomeButton/HomeButton";
 import PageTitle from "../PageTitle/PageTitle";
 import AboutMeSVG from "./AboutMeSVG/AboutMeSVG";
 import Mihai from "../../assets/about-me-mihai.png"
+import {useEffect,useState} from 'react'
 
 export default function AboutMe(){
+
+    const [pageOpacity,setPageOpacity] = useState(0)
+    useEffect(()=>{
+        setTimeout(()=>{
+            setPageOpacity(1)
+        },250)
+
+    },[])
+
     return(
         <>
-            <div id="about-me-page">
+            <div id="about-me-page" style={{"opacity":`${pageOpacity}`}}>
                 <HomeButton/>
                 <PageTitle text="About me"/>
 

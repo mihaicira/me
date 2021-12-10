@@ -15,9 +15,17 @@ h1,h2,h3,h4,h5,h6,p,a,span{
     color: $whiteish;
 }
 
+@mixin transition($ms){
+    transition: $ms;
+    -o-transition: $ms;
+    -webkit-transition: $ms;
+    -moz-transition: $ms;
+}
+
 .dynamic-container{
     text-align: center;
     height: 40vh;
+    @include transition(500ms);
 }
 
 

@@ -1,5 +1,12 @@
 @import '../../variables';
 
+@mixin transition($ms){
+    transition: $ms;
+    -o-transition: $ms;
+    -webkit-transition: $ms;
+    -moz-transition: $ms;
+}
+
 .main-content-container{
     display: flex;
     align-items: center;
@@ -16,6 +23,8 @@
         max-width: 50%;
         flex-grow: 1;
 
+        @include transition(500ms);
+
         //margin-left: 50%;
         //transform: translateX(-50%);
 
@@ -31,6 +40,7 @@
             margin: 5px;
             font-family: $robotomono;
         }
+
     }
 
 
@@ -42,6 +52,8 @@
         gap: 20px;
         width: 30%;
         min-width: 300px;
+
+        @include transition(500ms);
 
 
 
@@ -58,10 +70,7 @@
             outline: none;
             border: none;
 
-            transition: 500ms;
-            -o-transition: 500ms;
-            -webkit-transition: 500ms;
-            -moz-transition: 500ms;
+            @include transition(500ms);
 
             cursor: pointer;
             overflow: hidden;

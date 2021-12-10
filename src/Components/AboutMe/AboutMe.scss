@@ -7,7 +7,16 @@
   gap:$gap;
 }
 
+@mixin transition($ms){
+  transition: $ms;
+  -o-transition: $ms;
+  -webkit-transition: $ms;
+  -moz-transition: $ms;
+}
+
 #about-me-page{
+  @include transition(500ms);
+  opacity: 0;
 
   @include flex-center(50px);
   flex-direction: column;

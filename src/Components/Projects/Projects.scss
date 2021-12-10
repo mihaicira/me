@@ -1,0 +1,75 @@
+@import '../../variables';
+
+@mixin flex-center($gap){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:$gap;
+}
+
+@mixin transition($ms){
+  transition: $ms;
+  -o-transition: $ms;
+  -webkit-transition: $ms;
+  -moz-transition: $ms;
+}
+
+
+#projects-page{
+  @include flex-center(50px);
+  flex-direction: column;
+  padding: 0 0 50px 0;
+}
+
+.projects-list{
+  width: 80%;
+  @include flex-center(10px);
+  flex-wrap: wrap;
+
+  button{
+    background: transparent;
+    height: 120px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    @include transition(500ms);
+    cursor: pointer;
+
+    &:hover{
+      border-bottom: 3px solid $green;
+    }
+
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.selected-project{
+  @include flex-center(10px);
+  flex-direction: column;
+  border-radius: 5px;
+  width: 40%;
+  background: $green;
+  padding: 20px;
+  text-align: center;
+
+  *{
+    margin: 0;
+    font-family: $robotomono;
+  }
+
+  a{
+    text-decoration: none;
+    @include transition(500ms);
+    color: $bgcolor;
+    &:hover{
+      color: $lightergreen;
+    }
+  }
+
+  img{
+    height: 120px;
+  }
+}
