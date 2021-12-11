@@ -29,7 +29,17 @@ export default function AboutMe(){
                     <div>
                         <h5>$whoami</h5>
                         <p>
-                            A highly motivated 3rd year Computer Science student. I have been coding since highschool, building a great variety of programs and games using C++ or Python. I participated in the Zero Robotics Competition and managed to qualify in the semi-finals, with my team made up of fellow classmates. Until recently I have taught Python language to a group of 9th grade students. I am an open-minded person whose main objective is to wide up his domain of knowledge and keep up with the most used technology. I enjoy talking to people and working with them, discussing stuff and solving issues together. At the moment you're reading this I am looking for a job to help me grow professionally.
+                            A highly motivated 3rd year Computer Science student looking for
+                            experience to learn, be challenged and develop my skills. I have been
+                            coding since highschool, building a great variety of programs, such as
+                            Sudoku solvers and various games using C++ or Python. I participated
+                            in the Zero Robotics Competition and managed to qualify in the semifinals, with my team made up of fellow classmates. I have taught Python
+                            language to a group of 9th grade students. Beside that, I am a web
+                            development enthusiast who enjoys creating interesting UI and UX
+                            designs. I am also currently involved in some university web projects as
+                            a full-stack developer, being the team leader of a bigger project at my
+                            university.
+
                         </p>
                     </div>
 

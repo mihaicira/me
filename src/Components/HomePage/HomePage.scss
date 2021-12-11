@@ -21,6 +21,8 @@
         max-width: 50%;
         flex-grow: 1;
 
+        cursor: default;
+
 
         @include transition(500ms);
 
@@ -28,6 +30,8 @@
             font-size: 5rem;
             margin: 0;
             font-family: $robotoslab;
+
+
         }
 
         &>h6{
@@ -106,4 +110,25 @@
             }
         }
     }
+}
+
+
+#loading-anim{
+    transform: translateY(100%);
+    #load-1,
+    #load-2{
+        transform-origin: center;
+        transform: rotateZ(0deg);
+        animation: 2s rotate linear infinite;
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+          transform: rotateZ(360deg);
+      }
+
 }

@@ -15,7 +15,11 @@ function Project(props){
         <img src={props.image} alt="img"/>
         <h2>{props.name}</h2>
         <h5>{props.type}</h5>
-        <h5>Link: <a href={`${props.link}`}>{props.name}</a></h5>
+        {
+            props.link &&
+            <h5>Link: <a href={`${props.link}`} target="_blank" rel="noreferrer">{props.name}</a></h5>
+        }
+
         <p>{props.text1 ? props.text1 : ""}</p>
         <p>{props.text2 ? props.text2 : ""}</p>
         <p>{props.text3 ? props.text3 : ""}</p>

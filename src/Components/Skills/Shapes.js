@@ -38,6 +38,26 @@ function ConeShape(props) {
     );
 }
 
+function Sphere(props) {
+    const mesh = useRef();
+    useFrame(() => {
+        mesh.current.rotation.y+=0.01
+        mesh.current.rotation.x -= 0.01;
+        mesh.current.rotation.z += 0.01;
+    });
+    return (
+        <mesh ref={mesh} visible position={[props.xz[0], 0, props.xz[1]]} castShadow>
+            <sphereGeometry attach="geometry" args={[1, 16, 16]} />
+            <meshStandardMaterial
+                wireframe
+                color="white"
+                roughness={0.1}
+                metalness={0.1}
+            />
+        </mesh>
+    );
+}
+
 
 
 
@@ -46,6 +66,7 @@ export default function Shapes(){
 
     const [cubexyz,setCubexyz] = useState([-7,-5,0])
     const [prismxyz,setPrismxyz] = useState([-8,-8,-6])
+    const [spherexz,setSpherexz] = useState([-5,0])
 
     function checkScroll(e){
         let scroll = window.scrollY
@@ -60,11 +81,16 @@ export default function Shapes(){
 
         setCubexyz([x,y,z])
 
-        x = (calc * 9)-8
+        x = (calc * 11)-8
         y = (calc * 8)-8
         z = (calc * 10)-6
 
         setPrismxyz([x,y,z])
+
+        x = (calc * 4.5) - 5
+        z = (calc * 4)
+
+        setSpherexz([x,z])
 
     }
     useEffect(()=>{
@@ -81,5 +107,6 @@ export default function Shapes(){
         <pointLight position={[5, 20, 30]} />
         <Box xyz={cubexyz}/>
         <ConeShape xyz={prismxyz}/>
+        <Sphere xz={spherexz}/>
         </>)
 }

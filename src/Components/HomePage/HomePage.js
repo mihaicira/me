@@ -3,6 +3,7 @@ import Dynamic from "../../Dynamic";
 import {Suspense, useEffect, useState,useRef} from 'react';
 import {Canvas} from "@react-three/fiber";
 import {useNavigate} from "react-router-dom";
+import LoadingAnimation from "./LoadingAnimation";
 
 
 function HomePage() {
@@ -33,7 +34,7 @@ function HomePage() {
         <>
         <div ref={element} style={{"opacity":`${pageOpacity}`}} className="subpage">
             <div className="dynamic-container" style={{"transform":`translateY(${modelTranslate}%)`}} >
-                <Suspense fallback={<div style={{color:"red"}}>Loading... </div>}>
+                <Suspense fallback={<LoadingAnimation/>}>
                     <Canvas>
                         {/*<OrbitControls />*/}
 
@@ -45,6 +46,8 @@ function HomePage() {
                     </Canvas>
                 </Suspense>
             </div>
+
+
 
             <div className="main-content-container">
 
