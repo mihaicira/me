@@ -4,6 +4,28 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyBKziCa2opfS83LWNLnkmrBONv4J0OZGi8",
+    authDomain: "personal-f27c7.firebaseapp.com",
+    projectId: "personal-f27c7",
+    storageBucket: "personal-f27c7.appspot.com",
+    messagingSenderId: "735277845592",
+    appId: "1:735277845592:web:72fe0b250a3074d3a28e2d",
+    measurementId: "${config.measurementId}"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 ReactDOM.render(
       <BrowserRouter>
           <App />
