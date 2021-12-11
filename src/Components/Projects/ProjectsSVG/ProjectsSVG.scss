@@ -118,12 +118,14 @@
 
   #right_cloud{
     transform-origin: center;
+    transform-box: fill-box;
     animation: 1000ms come-from-right 3000ms forwards;
     opacity: 0;
   }
 
   #sun{
     transform-origin: center;
+    transform-box: fill-box;
     animation: 1000ms come-from-left 3000ms forwards;
     opacity: 0;
   }

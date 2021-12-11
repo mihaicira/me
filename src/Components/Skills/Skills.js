@@ -40,24 +40,35 @@ export default function Skills(){
                 </div>
 
                 <div>
-                    <h3>Web development</h3>
+                    <h3>Software engineering</h3>
                     <div>
-                        <h4> World Wide Web structuring: HTML</h4>
-                        <h4>HTML Format: CSS, SASS</h4>
-                        <h4>Programming language: JavaScript</h4>
-                        <h4> User Interface JS Library: React (State, Context, Redux, Hooks, Styled components, Class / Functional components, Router)</h4>
-                        <h4> Other JS libraries: JQuery</h4>
+                        <h4> Object-oriented programming languages:
+                            <ul>
+                                <li>Python;</li>
+                                <li>Java;</li>
+                                <li>Javascript;</li>
+                                <li>C++;</li>
+                                <li>Ruby;</li>
+                            </ul></h4>
+                        <h4> Procedure oriented programming language: C;</h4>
+                        <h4> Expression oriented programming languages: <ul>
+                            <li>CLISP;</li>
+                            <li>Jess;</li>
+                        </ul></h4>
+                        <h4> Scientific programming language: R;</h4>
                     </div>
                 </div>
 
                 <div>
-                    <h3>Web development</h3>
+                    <h3>Mobile development</h3>
                     <div>
-                        <h4> World Wide Web structuring: HTML</h4>
-                        <h4>HTML Format: CSS, SASS</h4>
-                        <h4>Programming language: JavaScript</h4>
-                        <h4> User Interface JS Library: React (State, Context, Redux, Hooks, Styled components, Class / Functional components, Router)</h4>
-                        <h4> Other JS libraries: JQuery</h4>
+                        <h4> iOS Development:
+                            <ul>
+                                <li>Swift;</li>
+                                <li>SwiftUI Library;</li>
+                                <li>Firebase iOS SDK;</li>
+                                <li>NextStep UserDefaults;</li>
+                            </ul></h4>
                     </div>
                 </div>
             </div>
