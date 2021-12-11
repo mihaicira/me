@@ -48,3 +48,24 @@ h1,h2,h3,h4,h5,h6,p,a,span{
     align-items: center;
     justify-content: center;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $whiteish;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $lightergreen;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $green;
+}
