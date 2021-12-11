@@ -14,6 +14,10 @@
   gap:$gap;
 }
 
+#morph-container{
+  @include flex-center(0)
+}
+
 .skills-container{
   @include flex-center(50px);
   flex-direction: column;
@@ -21,7 +25,8 @@
 
   margin-bottom: 100px;
 
-  margin-top: 10cm;
+
+
 
   &>*{
     width: 600px;

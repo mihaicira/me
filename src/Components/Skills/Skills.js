@@ -4,11 +4,29 @@ import {useEffect, useState,useRef} from 'react';
 import PageTitle from "../PageTitle/PageTitle";
 import Shapes from "./Shapes";
 import {Canvas} from "@react-three/fiber";
+import { MorphReplace } from 'react-svg-morph';
+import Elephant from "./Svgs/Elephant";
+import Cow from "./Svgs/Cow";
+import Cat from "./Svgs/Cat";
+import Monkey from "./Svgs/Monkey";
+import Dog from "./Svgs/Dog";
+import Crocodile from "./Svgs/Crocodile";
+
+
 
 export default function Skills(){
     const [pageOpacity,setPageOpacity] = useState(0)
     const element = useRef()
 
+    const [idx,setIdx] = useState(0)
+
+    const Animals = [
+        <Elephant key="elephant"/>,
+        <Cow key="cow"/>,
+        <Cat key="cat"/>,
+        <Monkey key="monkey"/>,
+        <Dog key="dog"/>,
+        <Crocodile key="crocodile"/>]
 
     useEffect(()=>{
         element.current.scrollIntoView()
@@ -21,6 +39,15 @@ export default function Skills(){
         <div id="skills-page" className="subpage" ref={element} style={{"opacity":`${pageOpacity}`}}>
             <HomeButton page="skills-page"/>
             <PageTitle text="Skills"/>
+
+            <div onClick={()=>{setIdx((idx+1)%6)}} id="morph-container">
+                <MorphReplace width={400} height={500}>
+                    {/*{checked ? <Elephant key="checked" /> : <Cow key="checkbox" />}*/}
+                    {
+                        Animals[idx]
+                    }
+                </MorphReplace>
+            </div>
 
             <div id="skills-cube">
                 <Canvas>
