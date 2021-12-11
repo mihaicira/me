@@ -46,10 +46,10 @@ export default function Contact(){
                     {
                         !sent &&
                             <>
-                                <label>Your name</label>
+                                <label>Your name / email address</label>
                                 <input type="text" onChange={e=>setEmail(e.target.value)} required/>
 
-                                <label>Your name</label>
+                                <label>Message</label>
                                 <textarea  onChange={e=>setMessage(e.target.value)} required/>
 
                                 <button>Submit</button>
