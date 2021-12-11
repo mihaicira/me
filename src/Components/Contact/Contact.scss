@@ -1,0 +1,98 @@
+@import '../../variables';
+
+@mixin transition($ms){
+  transition: $ms;
+  -o-transition: $ms;
+  -webkit-transition: $ms;
+  -moz-transition: $ms;
+}
+
+@mixin flex-center($gap){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:$gap;
+}
+
+
+#contact-page{
+  h3{
+    text-align: center;
+
+    font-family: $robotomono;
+    a{
+
+      text-decoration: none;
+      color: $green;
+      @include transition(500ms);
+      &:hover{
+        color: $lightergreen;
+      }
+    }
+  }
+  div{
+    @include flex-center(0px);
+    form{
+      width: 60%;
+      background: $lightergreen;
+
+      @include flex-center(20px);
+      flex-direction: column;
+      align-items: baseline;
+      border-radius: 5px;
+      padding: 20px;
+
+      label{
+        font-family: $robotoslab;
+        color: $whiteish;
+      }
+
+      input,textarea{
+        border-radius: 5px;
+        background: $whiteish;
+        border: none;
+        outline: none;
+        font-family: $robotomono;
+
+        padding: 5px 10px 5px 10px;
+      }
+
+      input{
+        width: 180px;
+        text-align: center;
+      }
+      textarea{
+        width: 50%;
+        max-width: 100%;
+        min-height: 100px;
+        max-height: 350px;
+      }
+
+      button{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 50px 5px 50px;
+        background: transparent;
+        border: 1px solid $whiteish;
+        outline: none;
+        border-radius: 100px;
+        color: $whiteish;
+        cursor: pointer;
+
+        font-family: $robotomono;
+
+        @include transition(500ms);
+        &:hover{
+          color: $green;
+          background: $bgcolor;
+        }
+      }
+
+      h2{
+        text-align: center;
+        width: 100%;
+        font-family: $robotoslab;
+      }
+    }
+  }
+}
