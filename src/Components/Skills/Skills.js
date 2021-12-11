@@ -4,7 +4,6 @@ import {useEffect, useState,useRef} from 'react';
 import PageTitle from "../PageTitle/PageTitle";
 import Shapes from "./Shapes";
 import {Canvas} from "@react-three/fiber";
-import {OrbitControls} from "@react-three/drei";
 
 export default function Skills(){
     const [pageOpacity,setPageOpacity] = useState(0)

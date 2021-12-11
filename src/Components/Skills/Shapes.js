@@ -1,5 +1,4 @@
-import {Canvas, useThree, useFrame } from "@react-three/fiber";
-import {OrbitControls} from "@react-three/drei";
+import {useThree, useFrame } from "@react-three/fiber";
 import {useEffect,useState,useRef} from "react";
 
 function Box(props){
