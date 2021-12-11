@@ -19,7 +19,10 @@
   flex-direction: column;
   padding: 0 50px 0 50px;
 
+  margin-top: 10cm;
+
   &>*{
+
     max-width: 600px;
   }
 
@@ -94,4 +97,13 @@
   h3,h4{
     font-family: $robotomono;
   }
+}
+
+
+#skills-cube{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  top: 0vh;
 }

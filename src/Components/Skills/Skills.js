@@ -2,6 +2,9 @@ import "./Skills.scss"
 import HomeButton from "../HomeButton/HomeButton";
 import {useEffect, useState,useRef} from 'react';
 import PageTitle from "../PageTitle/PageTitle";
+import Shapes from "./Shapes";
+import {Canvas} from "@react-three/fiber";
+import {OrbitControls} from "@react-three/drei";
 
 export default function Skills(){
     const [pageOpacity,setPageOpacity] = useState(0)
@@ -20,6 +23,11 @@ export default function Skills(){
             <HomeButton page="skills-page"/>
             <PageTitle text="Skills"/>
 
+            <div id="skills-cube">
+                <Canvas>
+                    <Shapes/>
+                </Canvas>
+            </div>
             <div className="skills-container">
                 <div>
                     <h3>Web development</h3>
