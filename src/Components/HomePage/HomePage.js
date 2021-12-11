@@ -37,27 +37,22 @@ function HomePage() {
                 <Suspense fallback={<LoadingAnimation/>}>
                     <Canvas>
                         {/*<OrbitControls />*/}
-
                         <ambientLight intensity={0.5}/>
                         <pointLight position={[5, 20, 30]} />
                         <camera/>
-
                         <Dynamic/>
                     </Canvas>
                 </Suspense>
             </div>
 
-
-
             <div className="main-content-container">
-
                 <div className="main-left-container" style={{"transform":`translateX(${leftTranslate}%)`}}>
                     <h1>Cîra Mihai</h1>
                     <h6>web developer</h6>
                     <h6>mobile developer</h6>
                     <h6>problem solver</h6>
+                    <button onClick={()=>{changePageHandler('/contact')}}>I want a website!</button>
                 </div>
-
                 <div className="main-navbar" style={{"transform":`translateX(${rightTranslate}%)`}}>
                     <button onClick={()=>{changePageHandler('/about')}}>About me</button>
                     <button onClick={()=>{changePageHandler('/projects')}}>Projects</button>
