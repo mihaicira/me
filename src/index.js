@@ -7,6 +7,7 @@ import {BrowserRouter} from "react-router-dom";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import StarfieldAnimation from "react-starfield-animation";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -28,7 +29,19 @@ const analytics = getAnalytics(app);
 
 ReactDOM.render(
       <BrowserRouter>
+          <StarfieldAnimation
+              style={{
+                  position: 'fixed',
+                  width: '100%',
+                  height: '100%',
+                  zIndex:'-100'
+              }}
+              lineWidth={3}
+              numParticles={500}
+          />
+
           <App />
+
       </BrowserRouter>,
   document.getElementById('root')
 );

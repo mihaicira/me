@@ -1,25 +1,75 @@
 import './App.scss'
 import HomePage from "./Components/HomePage/HomePage";
 import AboutMe from "./Components/AboutMe/AboutMe";
-import StarfieldAnimation from "react-starfield-animation";
 import {Routes, Route} from 'react-router-dom';
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
+import PopUp from "./Components/popUp/PopUp";
+import emailjs from "emailjs-com";
+import {useState,useEffect} from 'react';
 
 export default  function App() {
+
+    const [popUp,setPopUp] = useState(false)
+
+
+    function sendFeedback(cursiosity,rating){
+        switch(cursiosity){
+            case 1:
+                cursiosity = "Personal curiosity"
+                break;
+            case 2:
+                cursiosity = "Professional curiosity"
+                break;
+            default:
+                cursiosity = "unknown case"
+        }
+
+        switch(rating){
+            case 1:
+                rating = `cry (${rating}/5)`
+                break;
+            case 2:
+                rating = `sad (${rating}/5)`
+                break;
+            case 3:
+                rating = `meh (${rating}/5)`
+                break;
+            case 4:
+                rating = `smile (${rating}/5)`
+                break;
+            case 5:
+                rating = `happy (${rating}/5)`
+                break;
+            default:
+                rating = "unknown case"
+        }
+
+        //Send email
+        const date = new Date()
+        emailjs.send("service_rzi5f25","template_316m40g",{
+            curiosity: cursiosity,
+            rating: rating,
+            date: date.toString()
+        },'user_T4jIQ0R5325FA0lZ8gMtO');
+
+        localStorage.setItem("feedback","yes")
+    }
+
+    useEffect(()=>{
+        if(!localStorage.getItem("feedback"))
+            setTimeout(()=>{
+                setPopUp(true)
+            },10*1000)
+    },[])
+
   return (
       <>
-          <StarfieldAnimation
-              style={{
-                  position: 'fixed',
-                  width: '100%',
-                  height: '100%',
-                  zIndex:'-100'
-              }}
-              lineWidth={3}
-              numParticles={500}
-          />
+          {
+              popUp && <PopUp sendFeedback={sendFeedback}/>
+          }
+
 
           <Routes>
               <Route path="/" exact element={<HomePage/>}/>

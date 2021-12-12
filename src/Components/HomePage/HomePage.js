@@ -32,6 +32,8 @@ function HomePage() {
 
     return (
         <>
+
+
         <div ref={element} style={{"opacity":`${pageOpacity}`}} className="subpage">
             <div className="dynamic-container" style={{"transform":`translateY(${modelTranslate}%)`}} >
                 <Suspense fallback={<LoadingAnimation/>}>
