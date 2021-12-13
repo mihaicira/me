@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 function FirstQuestion(props){
     return(<>
         <div>
+            <button onClick={props.close}><FontAwesomeIcon icon={exit} /></button>
             <h5>Hello! Thank you for being here.</h5>
             <h5>What are your interests?</h5>
 
@@ -27,7 +28,7 @@ function FirstQuestion(props){
 function SecondQuestion(props){
     return(<>
         <div>
-            <button><FontAwesomeIcon icon={exit} /></button>
+            <button onClick={props.close}><FontAwesomeIcon icon={exit} /></button>
             <h5>Thanks! </h5>
             <h5>How would you rate the website?</h5>
 
@@ -90,16 +91,22 @@ export default function PopUp(props){
 
     },[])
 
+    const justClose = () =>{
+        document.getElementById("popup-container").style.opacity='0';
+        setTimeout(()=>{
+            document.getElementById("popup-container").remove()
+        },600)
+    }
     return(<>
         <div id="popup-container" style={{"transform":`translateX(${translate}%)`}}>
             {
                 question === 1 &&
-                <FirstQuestion get={firstAnswer} set={setFirstAnswer}/>
+                <FirstQuestion get={firstAnswer} set={setFirstAnswer} close={justClose}/>
             }
 
             {
                 question === 2 &&
-                <SecondQuestion get={secondAnswer} set={setSecondAnswer}/>
+                <SecondQuestion get={secondAnswer} set={setSecondAnswer} close={justClose}/>
             }
 
             {
