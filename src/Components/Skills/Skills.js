@@ -36,8 +36,11 @@ export default function Skills(){
                        <h4> World Wide Web structuring: HTML</h4>
                        <h4>HTML Format: CSS, SASS</h4>
                        <h4>Programming language: JavaScript</h4>
-                       <h4> User Interface JS Library: React (State, Context, Redux, Hooks, Styled components, Class / Functional components, Router)</h4>
-                       <h4> Other JS libraries: JQuery</h4>
+                       <h4>User Interface JS Library: React (State, Context, Redux, Hooks, Styled components, Class / Functional components, Router, React Three Fiber [3D Modelling])</h4>
+                       <h4>APIs / Tools: Google Firebase, Google Analytics</h4>
+                       <h4>Back-end development: Node.js</h4>
+                       <h4>Other JS libraries: jQuery</h4>
+                       <h4>Other web technologies: TCP, UDP, HTTP Requests</h4>
                     </div>
                 </div>
 
@@ -53,7 +56,7 @@ export default function Skills(){
                                 <li>Ruby;</li>
                             </ul></h4>
                         <h4> Procedure oriented programming language: C;</h4>
-                        <h4> Expression oriented programming languages: <ul>
+                        <h4> Expression oriented programming languages (Functional programming): <ul>
                             <li>CLISP;</li>
                             <li>Jess;</li>
                         </ul></h4>
