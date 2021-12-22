@@ -41,7 +41,7 @@ export default function Projects(){
             name: "Center of Francophone Studies",
             image: CSF,
             type: "Website",
-            link: "https://mihaicira.github.io/Proiect-colectiv/",
+            link: "https://csf.uvt.ro/",
             text1: "The Center of Francophone Studies aims to carry out a comprehensive and coherent research program in the field of francophonie from the perspective of interculturality and interdisciplinarity.",
             text2:"The project has been built by a team of six people whose team leader was me. The project subject belongs to the Faculty of Letters, History and Theology within West University of Timisoara. We developed the product via a patnership between that faculty and my faculty, within a subject matter called \"collective project\"."
         },
