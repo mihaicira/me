@@ -14,17 +14,7 @@ export default  function App() {
     const [popUp,setPopUp] = useState(false)
 
 
-    function sendFeedback(cursiosity,rating){
-        switch(cursiosity){
-            case 1:
-                cursiosity = "Personal curiosity"
-                break;
-            case 2:
-                cursiosity = "Professional curiosity"
-                break;
-            default:
-                cursiosity = "unknown case"
-        }
+    function sendFeedback(rating){
 
         switch(rating){
             case 1:
@@ -49,7 +39,6 @@ export default  function App() {
         //Send email
         const date = new Date()
         emailjs.send("service_rzi5f25","template_316m40g",{
-            curiosity: cursiosity,
             rating: rating,
             date: date.toString()
         },'user_T4jIQ0R5325FA0lZ8gMtO');

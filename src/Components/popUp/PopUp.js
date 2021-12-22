@@ -56,33 +56,26 @@ function SecondQuestion(props){
 
 export default function PopUp(props){
 
-    const [question,setQuestion] = useState(1)
+    const [question,setQuestion] = useState(2)
     const [firstAnswer,setFirstAnswer] = useState(null)
     const [secondAnswer,setSecondAnswer] = useState(null)
 
     const [translate,setTranslate] = useState("130")
 
     useEffect(()=>{
-        if(firstAnswer){
-            document.getElementById("popup-container").style.opacity='0';
-            setTimeout(()=>{
-                setQuestion(2)
-                document.getElementById("popup-container").style.opacity='1';
-            },500)
-
-        }
         if(secondAnswer){
+            document.getElementById("popup-container").style.opacity='0';
             setTimeout(()=>{
                 setQuestion(3)
                 document.getElementById("popup-container").style.opacity='1';
-                props.sendFeedback(firstAnswer,secondAnswer)
+                props.sendFeedback(secondAnswer)
                 setTimeout(()=>{
                     document.getElementById("popup-container").style.opacity='0';
                 },2000)
             },500)
         }
 
-    },[firstAnswer,secondAnswer])
+    },[secondAnswer])
 
     useEffect(()=>{
         setTimeout(()=>{
