@@ -8,6 +8,7 @@ import CSF from '../../assets/csf.png'
 import OfficeAssistant from '../../assets/OfficeAssistant.png'
 import Snake from '../../assets/Snake.png'
 import DataWalk from '../../assets/dataWalk.png'
+import RickAndMorty from '../../assets/rickandmorty.png'
 import {useState,useRef,useEffect} from 'react'
 
 function Project(props){
@@ -30,12 +31,12 @@ export default function Projects(){
 
     const Hardcoded_Projects = [
         {
-            name: "Classroom Laboratory",
-            image: ClassroomLab,
-            type: "Website",
-            link: "https://classroomlab.uvt.ro/",
-            text1: "Classroom Laboratory is a classroom where selected courses are taught, an infrastructure for conducting experiments in teaching and methodology methods, and finally an arena for collaboration between students, teachers, researchers and the world of work.",
-            text2: "It is a front-end website only, which I built alone, as a volunteer, for the Faculty of Sociology and Psychology (West University of Timișoara).When needed, I am called to update stuff on the website."
+            name: "Rick and Morty Characters",
+            image: RickAndMorty,
+            type: "Website (ReactJS Application)",
+            link: "https://mihaicira.github.io/rick-and-morty/",
+            text1: "The main purpose of the website is to present all characters from Rick and Morty TV Series. The user is able to search the characters by their name and filter by their status: dead, alive, unknown or all.",
+            text2: " The user recieves the results as pages, being able to navigate through them. One page displays a maximum of 20 characters. Each character is has its own page where the user can find more informations about him. It's also possible for the user to share the URL of any character by clicking on the clipboard icon that can be found both on the searching page and his own detailed page."
         },
         {
             name: "Center of Francophone Studies",
@@ -43,7 +44,16 @@ export default function Projects(){
             type: "Website",
             link: "https://csf.uvt.ro/",
             text1: "The Center of Francophone Studies aims to carry out a comprehensive and coherent research program in the field of francophonie from the perspective of interculturality and interdisciplinarity.",
-            text2:"The project has been built by a team of six people whose team leader was me. The project subject belongs to the Faculty of Letters, History and Theology within West University of Timisoara. We developed the product via a patnership between that faculty and my faculty, within a subject matter called \"collective project\"."
+            text2:"The project has been built by a team of six people whose team leader was me. The project subject belongs to the Faculty of Letters, History and Theology within West University of Timisoara. We developed the product via a patnership between that faculty and my faculty, within a certain subject matter.",
+            text3:"The website is a complex online platform that manages some processes that in the past have been dealt with manually. It has plenty of systems, such as a user account system based on roles, each role having its responsabilities."
+        },
+        {
+            name: "Classroom Laboratory",
+            image: ClassroomLab,
+            type: "Website",
+            link: "https://classroomlab.uvt.ro/",
+            text1: "Classroom Laboratory is a classroom where selected courses are taught, an infrastructure for conducting experiments in teaching and methodology methods, and finally an arena for collaboration between students, teachers, researchers and the world of work.",
+            text2: "It is a front-end website only, which I built alone, as a volunteer, for the Faculty of Sociology and Psychology (West University of Timișoara).When needed, I am called to update stuff on the website."
         },
         {
             name: "Datawalk Landing Page",
@@ -55,7 +65,7 @@ export default function Projects(){
         {
             name: "Choiceezz",
             image: Choicezz,
-            type: "Mobile web application",
+            type: "Mobile web application (ReactJS app)",
             link: "https://mihaicira.github.io/Choicezz/",
             text1: "Choicezz is the ezz way to make a choice. It's the perfect mobile application when you can't decide either to eat some Burger King, Tacobell or Mc Donald's. With Choicezz you can let the Gods decide for you when you have to choose between food, movies and barely anything. You can create your own lists of objects and even save them for the next visit.",
             text2: "Choicezz is a project that I've built alone from scratch while trying to learn ReactJS. I also needed a mobile application for a subject matter at University, so a mobile web application that uses ReactJS was the best ideea."
@@ -65,7 +75,7 @@ export default function Projects(){
             image: OfficeAssistant,
             type: "iOS Native application",
             text1: "If you're the CEO of a small business and the pandemic affected your employees, this application might be the one you need. Office Assistant lets your employee to sign up for going to office whenever they need to, respecting the following rule: In one day there can be maximum 5 employees at the office. That way, in case someone gets sick, you can easily acces the day that he went at work and check who else worked at office that day. Even more, employees can add a profile picture with their own accounts.",
-            text2: "Office Assistant is an application that I've built during my Mobile Development Internship at [e-spres-oh]. I also used it at University for a subject matter called \"individual project\". Building this project I've learnt how mobile applications work and the issues that might occur."
+            text2: "Office Assistant is an application that I've built during my Mobile Development Internship at [e-spres-oh]. I also used it at University for a certain subject matter. Building this project I've learnt how mobile applications work and the issues that might occur."
         },
         {
             name: "Web Snake Game",
