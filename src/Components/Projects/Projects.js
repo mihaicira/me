@@ -9,6 +9,7 @@ import OfficeAssistant from '../../assets/OfficeAssistant.png'
 import Snake from '../../assets/Snake.png'
 import DataWalk from '../../assets/dataWalk.png'
 import RickAndMorty from '../../assets/rickandmorty.png'
+import Remigoo from '../../assets/remigoo.png'
 import {useState,useRef,useEffect} from 'react'
 
 function Project(props){
@@ -46,6 +47,15 @@ export default function Projects(){
             text1: "The Center of Francophone Studies aims to carry out a comprehensive and coherent research program in the field of francophonie from the perspective of interculturality and interdisciplinarity.",
             text2:"The project has been built by a team of six people whose team leader was me. The project subject belongs to the Faculty of Letters, History and Theology within West University of Timisoara. We developed the product via a patnership between that faculty and my faculty, within a certain subject matter.",
             text3:"The website is a complex online platform that manages some processes that in the past have been dealt with manually. It has plenty of systems, such as a user account system based on roles, each role having its responsabilities."
+        },
+        {
+            name: "Remigoo",
+            image: Remigoo,
+            type: "Website",
+            link: "https://remigoo.herokuapp.com/",
+            text1: "Remigoo is a web-based appointment system website that operates as a third party for a fictional cinema.",
+            text2: "It has been created in 2021-2022 by three students, a team which I led. Users can create their own accounts if they want to, book tickets to certain movies and visualize their history on their profile page.",
+            text3: "The online website (the link above) does not have the server linked to it, that's why the main functionality doesnt work. Though, you can press the \"How to book a ticket\" button to see the main functionalities. Check out the 404 page too, it's kinda cool: https://remigoo.herokuapp.com/somerandomstuff"
         },
         {
             name: "Classroom Laboratory",

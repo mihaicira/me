@@ -29,7 +29,7 @@ function SecondQuestion(props){
     return(<>
         <div>
             <button onClick={props.close}><FontAwesomeIcon icon={exit} /></button>
-            <h5>Thanks! </h5>
+            <h5>Hi there! </h5>
             <h5>How would you rate the website?</h5>
 
             <div className="rating">
