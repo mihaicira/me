@@ -13,6 +13,7 @@ export default function Contact(){
 
 
     useEffect(()=>{
+        document.title = 'Mihai\'s Website - Contact ✌';
         element.current.scrollIntoView()
         setTimeout(()=>{
             setPageOpacity(1)

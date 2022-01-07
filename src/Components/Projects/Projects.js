@@ -108,6 +108,7 @@ export default function Projects(){
     const element = useRef()
 
     useEffect(()=>{
+        document.title = 'Mihai\'s Website - Projects ✌';
         element.current.scrollIntoView()
         setTimeout(()=>{
             setPageOpacity(1)

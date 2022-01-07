@@ -9,6 +9,7 @@ export default function AboutMe(){
 
     const [pageOpacity,setPageOpacity] = useState(0)
     useEffect(()=>{
+        document.title = 'Mihai\'s Website - About me ✌';
         element.current.scrollIntoView()
         setTimeout(()=>{
             setPageOpacity(1)

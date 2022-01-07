@@ -13,6 +13,7 @@ export default function Skills(){
 
 
     useEffect(()=>{
+        document.title = 'Mihai\'s Website - Skills ✌';
         element.current.scrollIntoView()
         setTimeout(()=>{
             setPageOpacity(1)

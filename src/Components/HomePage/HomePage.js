@@ -24,6 +24,8 @@ function HomePage() {
     }
 
     useEffect(()=>{
+        document.title = 'Mihai\'s Website ✌';
+
         element.current.scrollIntoView()
         setTimeout(()=>{
             setPageOpacity(1)
