@@ -4,6 +4,7 @@ import {useEffect, useState,useRef} from 'react';
 import PageTitle from "../PageTitle/PageTitle";
 import Shapes from "./Shapes";
 import {Canvas} from "@react-three/fiber";
+import SkillsSVG from "./SkillsSVG/SkillsSVG";
 
 
 
@@ -24,6 +25,8 @@ export default function Skills(){
         <div id="skills-page" className="subpage" ref={element} style={{"opacity":`${pageOpacity}`}}>
             <HomeButton page="skills-page"/>
             <PageTitle text="Skills"/>
+
+            <SkillsSVG/>
 
             <div id="skills-cube">
                 <Canvas>

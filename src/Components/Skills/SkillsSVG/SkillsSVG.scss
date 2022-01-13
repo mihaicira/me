@@ -1,0 +1,130 @@
+#skills-svg{
+ *{
+   transform-origin: center;
+   transform-box: fill-box;
+ }
+
+  #bar1{
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    animation: 1.5s bars ease-in-out 1200ms forwards;
+  }
+
+  #bar2{
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    animation: 1.5s bars ease-in-out 1000ms forwards;
+  }
+
+  #bar3{
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    animation: 1.5s bars ease-in-out 800ms forwards;
+  }
+
+  #prog1{
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    animation: 1.5s bars ease-in-out 1800ms forwards;
+  }
+
+  #prog2{
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    animation: 1.5s bars ease-in-out 1600ms forwards;
+  }
+
+  #prog3{
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    animation: 1.5s bars ease-in-out 1400ms forwards;
+  }
+
+
+  #arr1{
+    transform-origin: bottom;
+    opacity: 0;
+    transform:  rotateY(180deg) translateX(-100%);
+    animation: 1.5s firstArr ease-in-out 1400ms forwards;
+  }
+
+  #arr2{
+    transform-origin: bottom;
+    opacity: 0;
+    transform:  rotateY(180deg) translateX(100%);
+    animation: 1.5s secondArr ease-in-out 1400ms forwards;
+  }
+
+  #arr3{
+    transform-origin: bottom;
+    opacity: 0;
+    transform:rotateY(-180deg);
+    animation: 1.5s thirdArr ease-in-out 1400ms forwards;
+  }
+
+
+  #human{
+    transform: translateY(20%);
+    animation: 2.5s human-comein ease-in-out forwards;
+  }
+
+
+}
+
+@keyframes firstArr {
+  from{
+    opacity: 0;
+    transform:rotateY(180deg) translateX(-100%);
+  }
+  to{
+    opacity: 1;
+    transform: rotateY(0deg) translateX(0%);
+  }
+}
+
+@keyframes secondArr {
+  from{
+    opacity: 0;
+    transform:rotateY(-180deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+
+@keyframes thirdArr {
+  from{
+    opacity: 0;
+    transform:rotateY(180deg) translateX(100%);
+  }
+  to{
+    opacity: 1;
+    transform: rotateY(0deg) translateX(0%);
+  }
+}
+
+@keyframes human-comein{
+  0%{
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  45%{
+    opacity: 0;
+  }
+  100%{
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes bars {
+  0%{
+    transform: rotateY(-90deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  }
+
+}
