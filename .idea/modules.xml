@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dynamic.iml" filepath="$PROJECT_DIR$/.idea/dynamic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../planes/.idea/planes.iml" filepath="$PROJECT_DIR$/../planes/.idea/planes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../remigoo/.idea/remigoo.iml" filepath="$PROJECT_DIR$/../remigoo/.idea/remigoo.iml" />
     </modules>
   </component>
 </project>

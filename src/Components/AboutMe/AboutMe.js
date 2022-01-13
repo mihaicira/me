@@ -4,6 +4,9 @@ import PageTitle from "../PageTitle/PageTitle";
 import AboutMeSVG from "./AboutMeSVG/AboutMeSVG";
 import Mihai from "../../assets/about-me-mihai.png"
 import {useEffect,useState,useRef} from 'react'
+import {faCheck} from "@fortawesome/free-solid-svg-icons";
+import {faLinkedin,faFacebook,faTwitter,faGithub} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function AboutMe(){
 
@@ -61,12 +64,9 @@ export default function AboutMe(){
                         <p>Highschool: Carmen Sylva College</p>
                         <p className="smaller">Specialization: Mathematics and Computer Science</p>
                         <p className="smaller">September 2015 - July 2019</p>
-
                         <br/>
-
                         <p>University: West University of Timișoara</p>
                         <p className="smaller">Faculty: Faculty of Mathematics and Computer Science</p>
-
                         <p className="smaller">Specialization: Computer Science</p>
                         <p className="smaller">September 2019 - present</p>
 
@@ -83,6 +83,21 @@ export default function AboutMe(){
                         <p>from November 2019 to present</p>
                     </div>
 
+                </div>
+
+                <div className="green-section">
+
+                    <div className="long-green">
+                        <h5>$social</h5>
+
+                        <section id="social-container">
+                            <a href='https://www.linkedin.com/in/mihai-cira-714a181b3/' target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                            <a href='https://www.facebook.com/mihai.cira.7' target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+                            <a href='https://twitter.com/mihai291291' target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+                            <a href='https://github.com/mihaicira' target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                        </section>
+
+                    </div>
                 </div>
             </div>
 

@@ -70,6 +70,7 @@
     text-align: center;
     flex-wrap: wrap;
 
+
     div{
       border-radius: 5px;
       min-height: 200px;
@@ -101,6 +102,33 @@
         margin: 5px 0 0 0;
       }
 
+    }
+
+
+    .long-green{
+      width: 800px;
+
+      #social-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 3rem;
+        color: $whiteish;
+        cursor: pointer;
+        &>*{
+          @include transition(500ms);
+          &:hover{
+            transform: scale(.8);
+            color: $bgcolor;
+          }
+        }
+      }
+
+      @media screen and (max-width:800px) {
+        width: 80vw;
+      }
     }
 
     p,h5,h6{
