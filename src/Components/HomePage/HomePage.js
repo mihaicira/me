@@ -4,6 +4,7 @@ import {Suspense, useEffect, useState,useRef} from 'react';
 import {Canvas} from "@react-three/fiber";
 import {useNavigate} from "react-router-dom";
 import LoadingAnimation from "./LoadingAnimation";
+import Perks from "./Perks/Perks";
 
 
 function HomePage() {
@@ -64,6 +65,8 @@ function HomePage() {
                     <button onClick={()=>{changePageHandler('/contact')}}>Contact</button>
                 </div>
             </div>
+
+            {/*<Perks/>*/}
         </div>
 
 

@@ -1,0 +1,143 @@
+#PERKS{
+  //transform: translateY(-10px);
+  #P1{
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotateX(90deg);
+    animation: 3s vertical ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #P2{
+    transform-box: fill-box;
+    transform-origin: left;
+    transform: rotateX(90deg);
+    animation: 3s horizontal ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #P3{
+    transform-box: fill-box;
+    transform-origin: left;
+    transform: rotateY(90deg);
+    animation: 3s horizontal ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #P4{
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotateY(90deg);
+    animation: 3s vertical ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+
+  #E1{
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotateY(90deg);
+    animation: 3s vertical ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #E2,#E3,#E4{
+    transform-box: fill-box;
+    transform-origin: left;
+    transform: rotateX(90deg);
+    animation: 3s horizontal ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #R1,#R3{
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotateY(90deg);
+    animation: 3s vertical ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #R2,#R4{
+    transform-box: fill-box;
+    transform-origin: left;
+    transform: rotateX(90deg);
+    animation: 3s horizontal ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #R5{
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0);
+    animation: 3s scale ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #K1{
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotateY(90deg);
+    animation: 3s vertical ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #K2,#K3{
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0);
+    animation: 3s scale ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #S1,#S5{
+    transform-box: fill-box;
+    transform-origin: right;
+    transform: rotateX(90deg);
+    animation: 3s horizontal ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #S2,#S4{
+    transform-box: fill-box;
+    transform-origin: top;
+    transform: rotateY(90deg);
+    animation: 3s vertical ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  #S3{
+    transform-box: fill-box;
+    transform-origin: left;
+    transform: rotateX(90deg);
+    animation: 3s horizontal ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+}
+
+@keyframes vertical {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes horizontal {
+  from{
+    transform: rotateY(90deg);
+  }
+  to{
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes scale {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}

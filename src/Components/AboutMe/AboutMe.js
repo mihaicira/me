@@ -86,7 +86,7 @@ export default function AboutMe(){
                         <h5>$social</h5>
 
                         <section id="social-container">
-                            <a href='https://www.linkedin.com/in/mihai-cira-714a181b3/' target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                            <a href='https://www.linkedin.com/in/mihaicira/' target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
                             <a href='https://www.facebook.com/mihai.cira.7' target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
                             <a href='https://twitter.com/mihai291291' target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
                             <a href='https://github.com/mihaicira' target="_blank"><FontAwesomeIcon icon={faGithub} /></a>

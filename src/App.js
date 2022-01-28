@@ -67,6 +67,8 @@ export default  function App() {
               <Route path="/skills" exact element={<Skills/>}/>
               <Route path="/contact" exact element={<Contact/>}/>
           </Routes>
+
+
       </>
 
   );
