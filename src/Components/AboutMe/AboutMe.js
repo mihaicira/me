@@ -71,13 +71,13 @@ export default function AboutMe(){
                 <div className="white-section">
                     <div>
                         <h5>$experience</h5>
-
+                        <p>Web Development (Internship) at Crafting Software </p>
+                        <p>from February 2022</p>
                         <p>Mobile Development (Internship) at [e-spres-oh] </p>
                         <p>from August 2020 to December 2020</p>
                         <p>Web Developer (Volunteer) at Classroom Laboratory (UVT) </p>
-                        <p>from November 2019 to present</p>
+                        <p>from November 2019 to January 2022</p>
                     </div>
-
                 </div>
 
                 <div className="green-section">

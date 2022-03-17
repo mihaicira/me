@@ -55,6 +55,7 @@ export default function Skills(){
                             <ul>
                                 <li>Python;</li>
                                 <li>Java;</li>
+                                <li>C#;</li>
                                 <li>Javascript;</li>
                                 <li>C++;</li>
                                 <li>Ruby;</li>
